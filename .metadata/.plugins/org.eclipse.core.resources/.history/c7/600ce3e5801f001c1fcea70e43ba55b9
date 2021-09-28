@@ -1,0 +1,11 @@
+package a;
+
+public class MainImprimir1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Thread(new Imprimir1("A")).start();
+		new Thread(new Imprimir1("B")).start();
+	}
+
+}

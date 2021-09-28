@@ -1,0 +1,23 @@
+package main;
+
+import java.io.IOException;
+import java.io.PrintStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class ClienteSocket {
+	
+	public static void main (String[] args) throws IOException {
+		//Leitura do teclado
+		Scanner entrada = new Scanner(System.in);
+		
+		//Armazenar texto digitado
+		String texto = "";
+		
+		//Socket cliente
+		Socket cliente = null;
+		
+		//Stream saída de dados
+		PrintStream saida = null;
+	}
+}

@@ -1,0 +1,18 @@
+package main;
+
+public class ThreadSocket implements Runnable{
+	
+	private String str;
+	
+	public ThreadSocket(String str) {
+		this.str = str;
+	}
+	
+	public void run() {
+		for(int x=0; x<10; x++) {
+			System.out.println(str);
+			Thread.currentThread();
+			Thread.yield();
+		}
+	}
+}
