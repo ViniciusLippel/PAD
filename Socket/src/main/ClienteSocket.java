@@ -21,7 +21,7 @@ public class ClienteSocket {
 		PrintStream saida = null;
 		
 		try {
-			cliente = new Socket("172.16.3.1", 7000);
+			cliente = new Socket("127.0.0.1", 7000);
 			
 			saida = new PrintStream(cliente.getOutputStream());
 			
@@ -36,5 +36,7 @@ public class ClienteSocket {
 		}finally {
 			cliente.close();
 		}
+		
+		entrada.close();
 	}
 }

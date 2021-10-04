@@ -2,7 +2,6 @@ package main;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -28,7 +27,7 @@ public class ServidorSocket {
 				
 				String[] msg = texto.split(" ");
 				
-				new Thread(new ThreadSocket(Integer.parseInt(msg[1]), msg[2])).start();
+				new ThreadSocket(Integer.parseInt(msg[1]), msg[2], Integer.parseInt(msg[3])).start();
 				
 			}while (!"sair".equals(entrada.toString()));
 		

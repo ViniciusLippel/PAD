@@ -1,16 +1,19 @@
 package main;
 
-public class ThreadSocket implements Runnable{
+public class ThreadSocket extends Thread{
 	
-	private String str;
 	private int n;
+	private String str;
+	private int prioridade;
 	
-	public ThreadSocket(int n, String str) {
+	public ThreadSocket(int n, String str, int prioridade) {
 		this.n = n;
 		this.str = str;
+		this.prioridade = prioridade;
 	}
 	
 	public void run() {
+		setPriority(prioridade);
 		for(int x=0; x<n; x++) {
 			System.out.print(str);
 			System.out.println(" " + (x+1) + "/" + n);
