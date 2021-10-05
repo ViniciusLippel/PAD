@@ -9,5 +9,6 @@ public class Imprimir implements Runnable {
 		for(int x=0; x<10; x++) {
 			System.out.println(str);
 		}
+		
 	}
 }
