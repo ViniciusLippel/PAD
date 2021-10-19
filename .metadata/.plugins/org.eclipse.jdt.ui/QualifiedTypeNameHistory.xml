@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.runtime.Threads"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+</qualifiedTypeNameHistroy>

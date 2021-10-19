@@ -2,15 +2,15 @@ package produtor_consumidor;
 
 public class ThreadFibonacci extends Thread {
 
-	private int n;
+	private int fibNum;
 	private int result;
 
 	public ThreadFibonacci(int n) {
-		this.n = n;
+		this.fibNum = n;
 	}
 
 	public synchronized void run() {
-		int n1=1, n2=1, n3=0, count = this.n;      
+		int n1=1, n2=1, n3=0, count = this.fibNum;      
 
 		for(int i=2; i<count; ++i)  
 		{    
